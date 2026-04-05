@@ -3,7 +3,7 @@ public class Calculadora {
     /**
 
      Executa uma operação matemática básica.
-     @param operacao Tipo da operação: "soma", "subtrair", "multiplicar"
+     @param operacao Tipo da operação: "soma", "subtrair", "multiplicar", "dividir"
      @param a Primeiro número
      @param b Segundo número
      @return Resultado da operação*/
@@ -15,6 +15,8 @@ public class Calculadora {
                 return a - b;
             case "multiplicar":
                 return a * b;
+            case "dividir":
+                return (double) a / b;
             default:
                 throw new IllegalArgumentException("Operação inválida: " + operacao);}}
 
@@ -25,5 +27,6 @@ public class Calculadora {
         System.out.println("Soma: " + calc.calcular("soma", 10, 5));
         System.out.println("Subtrair: " + calc.calcular("subtrair", 10, 5));
         System.out.println("Multiplicar: " + calc.calcular("multiplicar", 10, 5));
+        System.out.println("Dividir: " + calc.calcular("dividir", 10, 5));
     }
 }
