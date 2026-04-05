@@ -20,7 +20,7 @@ public class Calculadora {
             default:
                 throw new IllegalArgumentException("Operação inválida: " + operacao);}}
 
-    // Método principal para testar
+    // Método principal de execucao para testes da calculadora
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
